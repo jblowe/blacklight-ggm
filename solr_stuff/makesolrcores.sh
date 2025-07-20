@@ -14,6 +14,7 @@ else
   # for solr as deployed on Ubuntu servers
   SOLR_CMD=/opt/solr/bin/solr
 fi
+SOLR_CMD=/snap/solr/1/bin/solr
 
 echo "solr command is $SOLR_CMD"
 
