@@ -19,6 +19,6 @@ $top =~ s/,.*$//;
 
 $city = 'Kathmandu' if $lockenumber =~ /K/;
 $city = 'Patan'     if $lockenumber =~ /P/;
-$city = 'Bharatpur' if $lockenumber =~ /B/;
+$city = 'Bhaktapur' if $lockenumber =~ /B/;
 
 print "$year\t$month $day_of_month\t$lockenumber\t$location\t$imagenumber\t$title\t$city\t$filename\t$top\t$sxb\t/ggm-images$x\n";
