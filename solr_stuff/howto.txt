@@ -1,0 +1,21 @@
+cd /mnt/images/
+tar xzf ggm-images.tgz 
+cd ~/blacklight-ggm/
+ln -s /mnt/images/ggm-images ggm-images
+RAILS_ENV=production rails assets:precompile
+cd
+git clone https://github.com/jblowe/blacklight-ggm
+cd blacklight-ggm/
+rm config/credentials.yml.enc 
+EDITOR=cat rails credentials:edit
+RAILS_ENV=production rake db:migrate
+RAILS_ENV=development rake db:migrate
+
+cd .../blacklight-ggm/solr_stuff
+python normalize_to_nfc.py ../public/ggm-images > x
+python normalize_to_nfc.py ../public/ggm-images --apply > x
+find ../public/ggm-images/ -type f | grep jpg > fnames.txt 
+perl -i -pe 's#../public/ggm-images##' fnames.txt 
+vi fnames.txt 
+./regen.sh 
+
