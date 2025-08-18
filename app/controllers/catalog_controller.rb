@@ -115,9 +115,9 @@ class CatalogController < ApplicationController
     # FACET FIELDS
      config.add_facet_field 'top_s', label: 'Top level', limit: true
      config.add_facet_field 'sub_s', label: '2nd level', limit: true
-     config.add_facet_field 'city_s', label: 'City', limit: true
+     config.add_facet_field 'location_s', label: 'Site', limit: true
      config.add_facet_field 'lockenumber_s', label: 'Locke number', limit: true
-     config.add_facet_field 'location_s', label: 'Location', limit: true
+     config.add_facet_field 'city_s', label: 'City', limit: true
      config.add_facet_field 'year_s', label: 'Year', limit: true
 
     # INDEX DISPLAY
