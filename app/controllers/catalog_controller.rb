@@ -115,7 +115,7 @@ class CatalogController < ApplicationController
     # FACET FIELDS
      config.add_facet_field 'top_s', label: 'Collection', limit: true
      config.add_facet_field 'sub_s', label: '2nd level', limit: true
-     config.add_facet_field 'location_s', label: 'Site', limit: true
+     config.add_facet_field 'location_s', label: 'Topic', limit: true
      config.add_facet_field 'lockenumber_s', label: 'Locke no.', limit: true
      config.add_facet_field 'city_s', label: 'City', limit: true
      config.add_facet_field 'year_s', label: 'Year', limit: true
@@ -127,7 +127,7 @@ class CatalogController < ApplicationController
      config.add_index_field 'sub_s', label: '2nd level'
      config.add_index_field 'city_s', label: 'City'
      config.add_index_field 'lockenumber_s', label: 'Locke no.'
-     config.add_index_field 'location_s', label: 'Location'
+     config.add_index_field 'location_s', label: 'Topic'
      config.add_index_field 'imagenumber_s', label: 'Image no.'
      config.add_index_field 'contributor_s', label: 'Contributor'
      config.add_index_field 'creator_s', label: 'Creator'
@@ -140,7 +140,7 @@ class CatalogController < ApplicationController
      config.add_show_field 'sub_s', label: '2nd level'
      config.add_show_field 'city_s', label: 'City'
      config.add_show_field 'lockenumber_s', label: 'Locke no.'
-     config.add_show_field 'location_s', label: 'Location'
+     config.add_show_field 'location_s', label: 'Topic'
      config.add_show_field 'imagenumber_s', label: 'Image no.'
      config.add_show_field 'contributor_s', label: 'Contributor'
      config.add_show_field 'creator_s', label: 'Creator'
