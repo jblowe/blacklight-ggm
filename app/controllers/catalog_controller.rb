@@ -131,7 +131,7 @@ class CatalogController < ApplicationController
      config.add_index_field 'imagenumber_s', label: 'Image number'
      config.add_index_field 'contributor_s', label: 'Contributor'
      config.add_index_field 'creator_s', label: 'Creator'
-     config.add_index_field 'path_s', helper_method: 'render_image_link', label: 'MEDIA'
+     # config.add_index_field 'path_s', helper_method: 'render_image_link', label: 'MEDIA'
      # config.add_index_field 'path_s', label: 'IMAGENAME'
 
 
