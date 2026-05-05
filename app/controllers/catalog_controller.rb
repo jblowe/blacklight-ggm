@@ -113,7 +113,7 @@ class CatalogController < ApplicationController
     config.autocomplete_path = 'suggest'
 
     # FACET FIELDS
-     config.add_facet_field 'top_s', label: 'Top level', limit: true
+     config.add_facet_field 'top_s', label: 'Collection', limit: true
      config.add_facet_field 'sub_s', label: '2nd level', limit: true
      config.add_facet_field 'location_s', label: 'Site', limit: true
      config.add_facet_field 'lockenumber_s', label: 'Locke number', limit: true
@@ -123,7 +123,7 @@ class CatalogController < ApplicationController
      config.add_facet_field 'contributor_s', label: 'Contributor', limit: true
 
     # INDEX DISPLAY
-     config.add_index_field 'top_s', label: 'Top level'
+     config.add_index_field 'top_s', label: 'Collection'
      config.add_index_field 'sub_s', label: '2nd level'
      config.add_index_field 'city_s', label: 'City'
      config.add_index_field 'lockenumber_s', label: 'Locke number'
@@ -136,7 +136,6 @@ class CatalogController < ApplicationController
 
 
     # SHOW DISPLAY
-     config.add_show_field 'lockenumber_s', label: 'Locke number'
      config.add_show_field 'creator_s', label: 'Creator'
      config.add_show_field 'contributor_s', label: 'Contributor'
      config.add_show_field 'imagenumber_s', label: 'Image number'
