@@ -17,6 +17,7 @@ $creator = 'Gregory Maskarinec';
 $contributor = '';
 $top =~ s/ of the Kathmandu Valley//;
 $top =~ s/,.*$//;
+$x = "/ggm-images$x";
 
 $city = 'Kathmandu' if $lockenumber =~ /K/;
 $city = 'Patan'     if $lockenumber =~ /P/;
