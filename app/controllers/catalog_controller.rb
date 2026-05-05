@@ -74,11 +74,11 @@ class CatalogController < ApplicationController
     # solr field configuration for search results/index views
     # list of images is hardcoded for both index and show displays
     #{index_title}
-    config.index.thumbnail_field = 'path_ss'
+    config.index.thumbnail_field = 'path_s'
 
     # solr field configuration for document/show views
     #{show_title}
-    config.show.thumbnail_field = 'path_ss'
+    config.show.thumbnail_field = 'path_s'
 
     # Have BL send all facet field names to Solr, which has been the default
     # previously. Simply remove these lines if you'd rather use Solr request
@@ -140,7 +140,7 @@ class CatalogController < ApplicationController
      config.add_show_field 'creator_s', label: 'Creator'
      config.add_show_field 'contributor_s', label: 'Contributor'
      config.add_show_field 'imagenumber_s', label: 'Image number'
-     config.add_show_field 'path_ss', helper_method: 'render_images', label: 'Images'
+     config.add_show_field 'path_s', helper_method: 'render_images', label: 'Images'
 
 
     # SORT FIELDS

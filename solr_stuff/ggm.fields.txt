@@ -8,6 +8,6 @@ city_s
 filename_s
 top_s
 sub_s
-path_ss
+path_s
 creator_s
 contributor_ss
