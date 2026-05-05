@@ -13,7 +13,8 @@ my ($year, $month, $day_of_month, $lockenumber, $location, $imagenumber, $title,
 $title = $_;
 $x =~ m#^/(.*?)/# ;
 $top = $1;
-
+$creator = 'Gregory Maskarinec';
+$contributor = '';
 $top =~ s/ of the Kathmandu Valley//;
 $top =~ s/,.*$//;
 
@@ -21,4 +22,4 @@ $city = 'Kathmandu' if $lockenumber =~ /K/;
 $city = 'Patan'     if $lockenumber =~ /P/;
 $city = 'Bhaktapur' if $lockenumber =~ /B/;
 
-print "$year\t$month $day_of_month\t$lockenumber\t$location\t$imagenumber\t$title\t$city\t$filename\t$top\t$sxb\t/ggm-images$x\n";
+print "$year\t$month $day_of_month\t$lockenumber\t$location\t$imagenumber\t$title\t$city\t$filename\t$top\t$sxb\t$x\t$creator\t$contributor\n";

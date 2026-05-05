@@ -119,6 +119,8 @@ class CatalogController < ApplicationController
      config.add_facet_field 'lockenumber_s', label: 'Locke number', limit: true
      config.add_facet_field 'city_s', label: 'City', limit: true
      config.add_facet_field 'year_s', label: 'Year', limit: true
+     config.add_facet_field 'creator_s', label: 'Creator'
+     config.add_facet_field 'contributor_s', label: 'Contributor', limit: true
 
     # INDEX DISPLAY
      config.add_index_field 'top_s', label: 'Top level'
@@ -126,12 +128,18 @@ class CatalogController < ApplicationController
      config.add_index_field 'city_s', label: 'City'
      config.add_index_field 'lockenumber_s', label: 'Locke number'
      config.add_index_field 'location_s', label: 'Location'
+     config.add_index_field 'imagenumber_s', label: 'Image number'
+     config.add_index_field 'contributor_s', label: 'Contributor'
+     config.add_index_field 'creator_s', label: 'Creator'
      config.add_index_field 'path_s', helper_method: 'render_image_link', label: 'MEDIA'
      # config.add_index_field 'path_s', label: 'IMAGENAME'
 
 
     # SHOW DISPLAY
      config.add_show_field 'lockenumber_s', label: 'Locke number'
+     config.add_show_field 'creator_s', label: 'Creator'
+     config.add_show_field 'contributor_s', label: 'Contributor'
+     config.add_show_field 'imagenumber_s', label: 'Image number'
      config.add_show_field 'path_ss', helper_method: 'render_images', label: 'Images'
 
 
