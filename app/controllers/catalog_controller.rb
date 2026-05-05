@@ -148,6 +148,7 @@ class CatalogController < ApplicationController
 
 
     # SORT FIELDS
+    config.add_sort_field 'title_s asc', label: 'Title'
     config.add_sort_field 'year_s asc, lockenumber_s asc', label: 'Year, Locke number'
 
     # TITLE
